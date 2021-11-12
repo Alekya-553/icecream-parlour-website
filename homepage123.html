@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Cards</title>
+    
+     <meta charset="utf-8">
+    <style type="text/css">
+  @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+      
+            
+*{
+ margin: 0px;
+ padding: 0px;
+}
+body{
+ font-family: arial;
+}
+       
+     .header {
+  padding:10px;
+  text-align: center;
+  background-color: darkgoldenrod;
+  color: white;
+}
+
+
+.card{
+     width: 20%;
+     display: inline-block;
+     box-shadow: 2px 2px 20px black;
+     border-radius: 5px; 
+     margin: 2%;
+   justify-content: space-around;
+    background-color: firebrick;
+    }
+
+        .image img{
+  width: 100%;
+
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+        }
+        .main{
+    
+            margin:10px;
+        }
+
+.title{
+ 
+  text-align: center;
+  padding: 10px;
+  
+ }
+
+h1{
+  font-size: 20px;
+    margin:5px;
+ }
+
+.des{
+  padding: 3px;
+  text-align: center;
+ font-size: 20px;
+  padding-top: 10px;
+        border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+ 
+}
+button{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  background-color:white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding:10px;
+    font-weight: bold;
+}
+button:hover{
+  background-color: black;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+}
+        
+        
+      
+h2{
+		width: 3%;
+	    position: relative;
+	    top: 60px;
+	    left: 90%;
+	    cursor: pointer;
+	}
+	h2:before{
+		content: attr(data-count);
+	    color:white;
+	    position: absolute;
+	    right: 16px;
+	    font-size: 15px;
+	    text-align: center;
+	    top:-12px;
+
+	    width: 20px;
+	    height: 20px;
+	    background: red;
+	    border-radius: 50%;
+	    opacity: 0;
+	}
+	h2.zero:before{
+		opacity: 1;
+	}  
+    
+        . des span
+        {
+        
+			position: absolute;
+		    top: 14px;
+		    left: 13px;
+		    background: red;
+		    width: 300px;
+		    height: 186px;
+		    display: none;
+		}
+        .des span image img{
+			width: 100%;
+			height: 100%;
+		}
+            
+            
+            
+        .select {
+			width: 60%;
+			height: 580px;
+			background:white;
+			position: absolute;
+			top: -1000px;
+			left: 20%;
+			transition: 0.5s;
+			overflow-y: auto;
+			margin: auto;
+		} 
+        
+		.select.display{
+			top: 10px;
+		}
+        .select.title h1 {
+			width: 100%;
+			height: 200px;
+			display: inline-block;
+			padding: 5px;
+			border: 1px solid white;
+			position: relative;
+			margin: 5px auto;
+        }
+       
+        .select image img{
+          
+			width: 300px;
+			height: 100%;
+		}
+		.select div title h1{
+            top: 50%;
+			padding: 35px;
+			color: white;
+            left:45%;
+		}
+        
+        .select div des h1{
+            padding :35px;
+            color:black;
+        }
+        
+        
+        .select div title h1
+        {
+			position: absolute;
+			top: 50%;
+			color: white;
+            Left:45%;
+		}
+        
+        
+        
+		.select div des p,
+        {
+			position: absolute;
+			top: 50%;
+			color: white;
+            Left:45%;
+		}
+		.select div des button{
+			left: 60%;
+			top: 55%;
+		}
+		.select  div des span{
+			display:none;
+		}
+		
+        
+            
+       
+    </head>
+</style>
+<body>
+
+<h2 ><i class="fa fa-shopping-cart"></i></h2>
+<div class="header">
+  <h1>MILKY WAY</h1>
+  <h1>ICECREAM</h1>
+  <p>Premium Ice Creams For Pleasure Seekers</p>
+    
+    <button class="cart">
+       
+        <a href="checkout.html" >Add to Cart</a>
+        <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+    </button>
+    </div>         
+
+    
+
+
+<section>
+ <div class="main">     
+  
+<div class="card">
+
+<div class="image">
+   <img src="MENU/Image-1.png">
+</div>
+<div class="title">
+ <h1>
+Bean Vanilla Ice Cream (95 gms)</h1>
+</div>
+<div class="des">
+<p> Rs:113.05</p>
+
+<button>BUY NOW</button>
+      <span> </span>
+</div>
+</div>
+<div class="card">
+
+<div class="image">
+   <img src="MENU/Image-2.png">
+</div>
+<div class="title">
+ <h1>Fresh Strawberry Ice Cream (95 gms)</h1>
+</div>
+<div class="des">
+ <p> Rs:113.05</p>
+    <span> </span>
+<button>BUY NOW</button>
+</div>
+</div>
+    <div class="card">
+
+<div class="image">
+   <img src="MENU/Image-3.png">
+</div>
+<div class="title">
+ <h1>
+Dark Chocolate Secrets Ice Cream (95 gms)</h1>
+</div>
+<div class="des">
+ <p> Rs:113.05</p>
+<button>BUY NOW</button>
+      <span> </span>
+</div>
+</div>
+    <div class="card">
+
+<div class="image">
+   <img src="MENU/Image-4.png">
+</div>
+<div class="title">
+ <h1>
+Californian Pistachio Ice Cream (95 gms)</h1>
+</div>
+<div class="des">
+ <p> Rs:113.05</p>
+<button>BUY NOW</button>
+      <span> </span>
+</div>
+</div>
+    <div class="card">
+
+<div class="image">
+   <img src="MENU/Image-5.png">
+</div>
+<div class="title">
+ <h1>Almond Crunch Ice Cream (95 gms)</h1>
+</div>
+<div class="des">
+     <p> Rs:113.05</p>
+<button>BUY NOW</button>
+      <span> </span>
+</div>
+</div>
+    <div class="card">
+
+<div class="image">
+   <img src="MENU/Image-6.png">
+</div>
+<div class="title">
+ <h1>Blueberry Cheescake Ice Cream (95 gms)</h1>
+</div>
+<div class="des">
+  <p> Rs:113.05</p>
+<button>BUY NOW</button>
+      <span> </span>
+</div>
+</div>
+    <div class="card">
+
+<div class="image">
+   <img src="MENU/Image-7.png">
+</div>
+<div class="title">
+ <h1>Blackforest Ice Cream (95 gms)</h1>
+</div>
+<div class="des">
+ <p> Rs:113.05</p>
+<button>BUY NOW</button>
+      <span> </span>
+</div>
+</div>
+    <div class="card">
+
+<div class="image">
+   <img src="MENU/Image-8.png">
+</div>
+<div class="title">
+ <h1>Butterscotch Bliss Ice Cream (95 gms)</h1>
+</div>
+<div class="des">
+ <p> Rs:113.05</p>
+<button>BUY NOW</button>
+      <span> </span>   
+    
+
+</div>
+</div>
+    <div class="card">
+
+<div class="image">
+   <img src="MENU/Image-9.png">
+</div>
+<div class="title">
+ <h1>White Choco Raspberry Ice Cream (95 gms)</h1>
+</div>
+<div class="des">
+  <p> Rs:113.05</p>
+<button>BUY NOW</button>
+    
+     <span> </span>
+</div>
+</div>
+    <div class="card">
+
+<div class="image">
+   <img src="MENU/Image-10.png">
+</div>
+<div class="title">
+ <h1>Hazelnut Choco Truffle Ice Cream (95 gms)</h1>
+</div>
+<div class="des">
+  <p> Rs:113.05</p>
+<button>BUY NOW</button>
+     <span> </span>
+</div>
+</div>
+    <div class="card">
+
+<div class="image">
+   <img src="MENU/Image-11.png">
+</div>
+<div class="title">
+ <h1>Caribean Almond Fudge Ice Cream (95 gms)</h1>
+</div>
+<div class="des">
+ <p> Rs:113.05</p>
+<button>BUY NOW</button>
+     <span> </span>
+</div>
+</div>
+    <div class="card">
+
+<div class="image">
+   <img src="MENU/Image-12.png">
+</div>
+<div class="title">
+ <h1>Cream 'N' Cookies Ice Cream (95 gms)</h1>
+</div>
+<div class="des">
+  <p> Rs:113.05</p>
+<button>BUY NOW</button>
+     <span> </span>
+</div>
+</div>
+    
+
+    <div class="card">
+
+<div class="image">
+   <img src="MENU/Image-13.png">
+</div>
+<div class="title">
+ <h1>Vanilla Choco Chips Ice Cream (95 gms)</h1>
+</div>
+<div class="des">
+ <p> Rs:113.05</p>
+<button>BUY NOW</button>
+     <span> </span>
+</div>
+</div>
+    <div class="card">
+
+<div class="image">
+   <img src="MENU/Image-14.png">
+</div>
+<div class="title">
+ <h1>Strawberry Cheescake Ice Cream (95 gms)</h1>
+</div>
+<div class="des">
+ <p> Rs:113.05</p>
+<button>BUY NOW</button>
+     <span> </span>
+</div>
+</div>
+    <div class="card">
+
+<div class="image">
+   <img src="MENU/Image-15.png">
+</div>
+<div class="title">
+ <h1>Swiss Chocolate Ice Cream (95 gms)</h1>
+</div>
+<div class="des">
+  <p> Rs:113.05</p>
+<button>BUY NOW</button>
+     <span> </span>
+</div>
+</div>
+    <div class="card">
+
+<div class="image">
+   <img src="MENU/Image-16.png">
+</div>
+<div class="title">
+ <h1>Mango Kingdom Ice Cream (95 gms)</h1>
+</div>
+<div class="des">
+ <p> Rs:113.05</p>
+<button>BUY NOW</button>
+     <span> </span>
+</div>
+</div>
+    <div class="card">
+
+<div class="image">
+   <img src="MENU/Image-17.png">
+</div>
+<div class="title">
+ <h1>Italian Wonder Ice Cream (95 gms)</h1>
+</div>
+<div class="des">
+ <p> Rs:113.05</p>
+<button>BUY NOW</button>
+     <span> </span>
+</div>
+</div>
+    
+    <div class="card">
+
+<div class="image">
+   <img src="MENU/Image-19.png">
+</div>
+<div class="title">
+ <h1>Belgian Chocoholic Ice Cream (95 gms)</h1>
+</div>
+<div class="des">
+ <p> Rs:113.05</p>
+<button>BUY NOW</button>
+     <span> </span>
+</div>
+</div>
+    <div class="card">
+
+<div class="image">
+   <img src="MENU/Image-20.png">
+</div>
+<div class="title">
+ <h1>Maha Raj Bhog Ice Cream (95 gms)</h1>
+</div>
+<div class="des">
+ <p> Rs:113.05</p>
+<button>BUY NOW</button>
+     <span> </span>
+</div>
+</div>
+    <div class="card">
+
+<div class="image">
+   <img src="MENU/Image-21.png">
+</div>
+<div class="title">
+ <h1>Balsamic fig & Mascarpone Ice Cream (95 gms)</h1>
+</div>
+<div class="des">
+  <p> Rs:113.05</p>
+<button>BUY NOW</button>
+     <span> </span>
+</div>
+</div>
+    <div class="card">
+
+<div class="image">
+   <img src="MENU/Image-22.png">
+</div>
+<div class="title">
+ <h1>Red Velvet Ice Cream (95 gms)</h1>
+</div>
+<div class="des">
+ <p> Rs:113.05</p>
+<button>BUY NOW</button>
+     <span> </span>     
+
+</div>
+</div>
+    <div class="card">
+
+<div class="image">
+   <img src="MENU/Image-23.png">
+</div>
+<div class="title">
+ <h1>Chocolate Overload Ice Cream (95 gms)</h1>
+</div>
+<div class="des">
+ <p> Rs:113.05</p>
+<button>BUY NOW</button>
+      <span> </span>
+</div>
+</div>
+    <div class="card">
+
+<div class="image">
+   <img src="MENU/Image-24.png">
+</div>
+<div class="title">
+ <h1>Low Fat Nas Vanilla Ice Cream (95 gms)</h1>
+</div>
+<div class="des">
+ <p> Rs:113.05</p>
+<button>BUY NOW</button>
+  <span> </span>
+</div>
+</div>
+    <div class="card">
+
+<div class="image">
+   <img src="MENU/Image-25.png">
+</div>
+<div class="title">
+ <h1>White Chocolate Ice Cream (95 gms)</h1>
+</div>
+<div class="des">
+ <p> Rs:113.05</p>
+<button>BUY NOW</button>
+      <span> </span>
+</div>
+</div>
+    
+
+<div class="card">
+
+<div class="image">
+   <img src="MENU/Image-26.png">
+</div>
+<div class="title">
+ <h1>Electric Blackcurrant Ice Cream (95 gms)</h1>
+</div>
+<div class="des">
+  <p> Rs:113.05</p>
+<button>BUY NOW</button>
+      <span> </span>
+</div>
+</div>
+<div class="card">
+
+<div class="image">
+   <img src="MENU/Image-27.png">
+</div>
+<div class="title">
+ <h1>Mocha fudge Ice Cream (95 gms)</h1>
+</div>
+<div class="des">
+ <p> Rs:113.05</p>
+<button>BUY NOW</button>
+    <span></span>
+</div>
+</div>
+
+<div class="card">
+
+<div class="image">
+   <img src="MENU/Image-29.png">
+</div>
+<div class="title">
+ <h1>Blackberry Violet Ice Cream (95 gms)</h1>
+</div>
+<div class="des">
+ <p> Rs:113.05</p>
+<button>BUY NOW</button>
+      <span> </span>
+</div>
+</div>
+
+<div class="card">
+
+<div class="image">
+   <img src="MENU/Image-30.png">
+</div>
+<div class="title">
+ <h1>Tropical Jackfruit Ice Cream (95 gms)</h1>
+</div>
+<div class="des">
+ <p> Rs:113.05</p>
+<button>BUY NOW</button>
+      <span> </span>
+</div>
+    </div>
+    
+    </div>
+
+   <div class="select">
+    </div>
+    </section>
+    </body>
+    </head>
+    
+    
+    
+    <script type="text/javascript">
+
+    var noti= document.querySelector('h2');
+	var select = document.querySelector('.select');
+       
+var button = document.getElementsByTagName('button');
+	for(but of button){
+		but.addEventListener('click', (e)=>{
+			var add = Number(noti.getAttribute('data-count') || 0);
+			noti.setAttribute('data-count', add +1);
+			noti.classList.add('zero');
+
+            
+            
+            
+            
+            
+            // copy and paste //
+			var parent = e.target.parentNode;
+			var clone = parent.cloneNode(true);
+			select.appendChild(clone);
+			clone.lastElementChild.innerText = "Buy-now";
+
+			if (clone) {
+				noti.onclick = ()=>{
+					select.classList.toggle('display');
+				}	
+			}
+    
+            
+            
+            // image --animation to cart ---//
+			var image = e.target.parentNode.querySelector('.image img');
+			var span = e.target.parentNode.querySelector('span');
+			var s_image = image.cloneNode(false);
+			span.appendChild(s_image);
+			span.classList.add('active');
+			setTimeout(()=>{
+				span.classList.remove('active');
+				span.removeChild(s_image);
+			}, 500); 
+            
+            
+		})
+        
+        
+	}
+
+
+</script>
+
+    
+    
+    
+
+    
